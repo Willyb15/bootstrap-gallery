@@ -1,0 +1,31 @@
+body{
+	background-image: url(http://16094-presscdn-0-15.pagely.netdna-cdn.com/wp-content/uploads/2015/06/stars.gif);
+}
+
+
+h1{
+	color:#fff;
+}
+
+h3{
+	color:#ff1a8c;
+}
+
+p{
+	color:#ff1a8c;
+}
+
+h1:hover{
+	color:red;
+}
+
+.thumb{
+	
+	margin-bottom: 30px;
+}
+
+footer{
+	
+	background-color: black;
+	padding: 30px;
+}
