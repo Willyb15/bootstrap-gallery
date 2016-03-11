@@ -7,9 +7,16 @@
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
 	<!-- 	bootstrap js -->
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
-	<link rel="stylesheet" href="css/jquery.fancybox.css?v=2.1.5" type="text/css" media="screen" />
-    <script type="text/javascript" src="js/jquery.fancybox.pack.js?v=2.1.5"></script>
-    <script>
+<!-- Add fancyBox -->
+<link rel="stylesheet" href="source/jquery.fancybox.css?v=2.1.5" type="text/css" media="screen" />
+<script type="text/javascript" src="source/jquery.fancybox.pack.js?v=2.1.5"></script>
+<link rel="stylesheet" href="source/helpers/jquery.fancybox-buttons.css?v=1.0.5" type="text/css" media="screen" />
+<script type="text/javascript" src="source/helpers/jquery.fancybox-buttons.js?v=1.0.5"></script>
+<script type="text/javascript" src="source/helpers/jquery.fancybox-media.js?v=1.0.6"></script>
+    <script type="text/javascript">
+    	$(document).ready(function() {
+		$(".fancybox").fancybox();
+	});
     $(document).ready(function() {
 	    $("#single_1").fancybox({
 	          helpers: {
@@ -19,12 +26,7 @@
 	          }
 	      });
 	});
-	$(document).ready(function() {
-    	$(".fancybox").fancybox({
-        	openEffect  : 'none',
-        	closeEffect : 'none'
-    	});
-	});
+
     </script>
 
 
@@ -38,8 +40,8 @@
 			</div>
 
 			<div class="col-lg-3 col-md-4 col-xs-6 thumb">
-				<a id="single_1" data-target="#myModal">
-				<img class="img-thumbnail" src="http://placehold.it/400x300">
+				<a id="single_1" href="http://farm2.staticflickr.com/1661/24170619595_ca34ef74d9_b.jpg" title="Bos 3 (p.vanhaastrecht)">
+					<img class="img-thumbnail" src="http://farm2.staticflickr.com/1661/24170619595_ca34ef74d9_m.jpg" alt="" />
 				</a>
 			</div>
 			<div class="col-lg-3 col-md-4 col-xs-6 thumb">
