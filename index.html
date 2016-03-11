@@ -7,7 +7,25 @@
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
 	<!-- 	bootstrap js -->
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
-
+	<link rel="stylesheet" href="css/jquery.fancybox.css?v=2.1.5" type="text/css" media="screen" />
+    <script type="text/javascript" src="js/jquery.fancybox.pack.js?v=2.1.5"></script>
+    <script>
+    $(document).ready(function() {
+	    $("#single_1").fancybox({
+	          helpers: {
+	              title : {
+	                  type : 'float'
+	              }
+	          }
+	      });
+	});
+	$(document).ready(function() {
+    	$(".fancybox").fancybox({
+        	openEffect  : 'none',
+        	closeEffect : 'none'
+    	});
+	});
+    </script>
 
 
 </head>
@@ -20,7 +38,7 @@
 			</div>
 
 			<div class="col-lg-3 col-md-4 col-xs-6 thumb">
-				<a data-toggle="modal" data-target="#myModal">
+				<a id="single_1" data-target="#myModal">
 				<img class="img-thumbnail" src="http://placehold.it/400x300">
 				</a>
 			</div>
@@ -58,31 +76,6 @@
 				<img class="img-thumbnail" src="http://placehold.it/400x300">
 			</div>
 		</div>
-		<!-- Button trigger modal -->
-		<button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal">
-		  Launch modal
-		</button>
-
-		<div id='myModal' class="modal fade" tabindex="-1" role="dialog">
-		  <div class="modal-dialog">
-		    <div class="modal-content">
-		      <div class="modal-header">
-		        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-		        <h4 class="modal-title">Modal title</h4>
-		      </div>
-		      <div class="modal-body">
-		      		<img src="http://assets.nydailynews.com/polopoly_fs/1.1245686!/img/httpImage/image.jpg_gen/derivatives/article_970/afp-cute-puppy.jpg">
-		      		<style = max-width:100%</style>
-		        <p>One fine body&hellip;</p>
-		      </div>
-		      <div class="modal-footer">
-		        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-		        <button type="button" class="btn btn-primary">Save changes</button>
-		      </div>
-		    </div><!-- /.modal-content -->
-		  </div><!-- /.modal-dialog -->
-		</div><!-- /.modal -->
-
 
 
 
