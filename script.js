@@ -2,7 +2,7 @@ function pBar(){
 	var pBar = document.getElementsByClassName("progress-bar");
 		for(var i = 0; i < pBar.length; i++){
 		pBar[i].classList.add('progress-bar-danger');
-	}
+		}
 }
 console.log(pBar);
 
